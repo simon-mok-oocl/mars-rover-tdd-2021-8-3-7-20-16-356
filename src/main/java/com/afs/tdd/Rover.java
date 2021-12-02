@@ -35,6 +35,7 @@ public class Rover {
         else if(this.dir == 'N' && comm == 'l') {this.dir = 'W';}
         else if(this.dir == 'E' && comm == 'l') {this.dir = 'N';}
         else if(this.dir == 'S' && comm == 'l') {this.dir = 'E';}
+        else if(this.dir == 'W' && comm == 'l') {this.dir = 'S';}
     }
 
     private void move()

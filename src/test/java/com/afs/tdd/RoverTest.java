@@ -156,7 +156,7 @@ public class RoverTest {
     {
         char input = 'l';
         String expected = "0 0 S";
-        Rover rover = new Rover(0 , 0 , 'w');
+        Rover rover = new Rover(0 , 0 , 'W');
 
         rover.exec(input);
         String output = rover.getLocation();
