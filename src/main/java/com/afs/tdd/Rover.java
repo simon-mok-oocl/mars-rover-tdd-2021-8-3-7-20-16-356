@@ -29,6 +29,7 @@ public class Rover {
     private void turn(char comm)
     {
         if(this.dir == 'N' && comm == 'r') {this.dir = 'E';}
+        else if(this.dir == 'E' && comm == 'r') {this.dir = 'S';}
     }
 
     private void move()
