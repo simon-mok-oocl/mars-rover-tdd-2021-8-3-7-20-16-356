@@ -32,16 +32,20 @@ public class RoverTest {
         assertEquals(expected , output);
     }
 
+
+
     @Test
-    public void should_y_decrease_when_l_given_w()
+    public void should_y_decrease_when_l_given_s()
     {
         char input = 'm';
-        String expected = "0 -1 W";
-        Rover rover = new Rover(0 , 0 , 'W');
+        String expected = "0 -1 S";
+        Rover rover = new Rover(0 , 0 , 'S');
 
         rover.exec('m');
         String output = rover.getLocation();
 
         assertEquals(expected , output);
     }
+
+
 }
