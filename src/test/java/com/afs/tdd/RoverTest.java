@@ -73,5 +73,18 @@ public class RoverTest {
         assertEquals(expected , output);
     }
 
+    @Test
+    public void should_turn_to_s_when_r_given_e()
+    {
+        char input = 'r';
+        String expected = "0 0 S";
+        Rover rover = new Rover(0 , 0 , 'E');
+
+        rover.exec(input);
+        String output = rover.getLocation();
+
+        assertEquals(expected , output);
+    }
+
 
 }
