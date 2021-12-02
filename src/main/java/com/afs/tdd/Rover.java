@@ -18,7 +18,7 @@ public class Rover {
         {
             move();
         }
-        else if(comm == 'r')
+        else if(comm == 'r' || comm == 'l')
             turn(comm);
         else
         {
@@ -32,6 +32,7 @@ public class Rover {
         else if(this.dir == 'E' && comm == 'r') {this.dir = 'S';}
         else if(this.dir == 'S' && comm == 'r') {this.dir = 'W';}
         else if(this.dir == 'W' && comm == 'r') {this.dir = 'N';}
+        else if(this.dir == 'N' && comm == 'l') {this.dir = 'W';}
     }
 
     private void move()

@@ -115,8 +115,8 @@ public class RoverTest {
     @Test
     public void should_turn_to_w_when_l_given_n()
     {
-        char input = 'r';
-        String expected = "0 0 N";
+        char input = 'l';
+        String expected = "0 0 W";
         Rover rover = new Rover(0 , 0 , 'N');
 
         rover.exec(input);
