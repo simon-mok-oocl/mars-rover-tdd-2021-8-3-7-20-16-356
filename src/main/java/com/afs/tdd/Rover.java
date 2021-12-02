@@ -14,6 +14,8 @@ public class Rover {
 
     public String batchExecute(String comm)
     {
+        for(int i = 0 ; i < comm.length() ; i++)
+            this.exec(comm.charAt(i));
         return this.getLocation();
     }
 
