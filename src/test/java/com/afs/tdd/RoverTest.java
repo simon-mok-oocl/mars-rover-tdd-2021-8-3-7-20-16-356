@@ -138,4 +138,17 @@ public class RoverTest {
         assertEquals(expected , output);
     }
 
+    @Test
+    public void should_turn_to_e_when_l_given_s()
+    {
+        char input = 'l';
+        String expected = "0 0 E";
+        Rover rover = new Rover(0 , 0 , 'S');
+
+        rover.exec(input);
+        String output = rover.getLocation();
+
+        assertEquals(expected , output);
+    }
+
 }
