@@ -5,11 +5,11 @@ public class Rover {
     private int y;
     private char dir;
 
-    public Rover()
+    public Rover(int x , int y , char d)
     {
-        this.x = 0;
-        this.y = 0;
-        this.dir = 'N';
+        this.x = x;
+        this.y = y;
+        this.dir = d;
     }
 
     public void exec(char comm)

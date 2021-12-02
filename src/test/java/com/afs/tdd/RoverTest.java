@@ -7,11 +7,24 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class RoverTest {
 
     @Test
-    public void should_Y_increase_when_l_given_n()
+    public void should_y_increase_when_l_given_n()
     {
         char input = 'm';
         String expected = "0 1 N";
-        Rover rover = new Rover();
+        Rover rover = new Rover(0 , 0 ,'N');
+
+        rover.exec('m');
+        String output = rover.getLocation();
+
+        assertEquals(expected , output);
+    }
+
+    @Test
+    public void should_x_increase_when_l_given_e()
+    {
+        char input = 'm';
+        String expected = "1 0 E";
+        Rover rover = new Rover(0 , 0 , 'E');
 
         rover.exec('m');
         String output = rover.getLocation();
