@@ -47,5 +47,19 @@ public class RoverTest {
         assertEquals(expected , output);
     }
 
+    @Test
+    public void should_x_decrease_when_l_given_w()
+    {
+        char input = 'm';
+        String expected = "-1 0 W";
+        Rover rover = new Rover(0 , 0 , 'W');
+
+        rover.exec('m');
+        String output = rover.getLocation();
+
+        assertEquals(expected , output);
+    }
+
+
 
 }
