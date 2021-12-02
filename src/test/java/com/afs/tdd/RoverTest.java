@@ -10,7 +10,7 @@ public class RoverTest {
     public void should_Y_increase_when_l_given_n()
     {
         char input = 'm';
-        String expected = "1 0 N";
+        String expected = "0 1 N";
         Rover rover = new Rover();
 
         rover.exec('m');
