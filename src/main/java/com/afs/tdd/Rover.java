@@ -29,6 +29,7 @@ public class Rover {
         if(this.dir == 'N') {this.y++;}
         else if(this.dir == 'E') {this.x++;}
         else if(this.dir == 'S') {this.y--;}
+        else if(this.dir == 'W') {this.x--;}
 
     }
 
