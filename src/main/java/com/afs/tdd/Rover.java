@@ -18,10 +18,17 @@ public class Rover {
         {
             move();
         }
+        else if(comm == 'r')
+            turn(comm);
         else
         {
             System.out.println("Illegal command");
         }
+    }
+
+    private void turn(char comm)
+    {
+        if(this.dir == 'N' && comm == 'r') {this.dir = 'E';}
     }
 
     private void move()

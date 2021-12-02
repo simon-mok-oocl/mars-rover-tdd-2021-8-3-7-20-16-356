@@ -13,7 +13,7 @@ public class RoverTest {
         String expected = "0 1 N";
         Rover rover = new Rover(0 , 0 ,'N');
 
-        rover.exec('m');
+        rover.exec(input);
         String output = rover.getLocation();
 
         assertEquals(expected , output);
@@ -26,7 +26,7 @@ public class RoverTest {
         String expected = "1 0 E";
         Rover rover = new Rover(0 , 0 , 'E');
 
-        rover.exec('m');
+        rover.exec(input);
         String output = rover.getLocation();
 
         assertEquals(expected , output);
@@ -41,7 +41,7 @@ public class RoverTest {
         String expected = "0 -1 S";
         Rover rover = new Rover(0 , 0 , 'S');
 
-        rover.exec('m');
+        rover.exec(input);
         String output = rover.getLocation();
 
         assertEquals(expected , output);
@@ -54,12 +54,24 @@ public class RoverTest {
         String expected = "-1 0 W";
         Rover rover = new Rover(0 , 0 , 'W');
 
-        rover.exec('m');
+        rover.exec(input);
         String output = rover.getLocation();
 
         assertEquals(expected , output);
     }
 
+    @Test
+    public void should_turn_to_e_when_r_given_n()
+    {
+        char input = 'r';
+        String expected = "0 0 E";
+        Rover rover = new Rover(0 , 0 , 'N');
+
+        rover.exec(input);
+        String output = rover.getLocation();
+
+        assertEquals(expected , output);
+    }
 
 
 }
