@@ -164,4 +164,17 @@ public class RoverTest {
         assertEquals(expected , output);
     }
 
+    @Test
+    public void should_end_at_negative_1_1_n_when_batch_run_mlmr_given_start_at_0_0_n()
+    {
+        String input = "mlmr";
+        String expected = "-1 1 N";
+        Rover rover = new Rover(0 , 0 , 'N');
+
+        rover.batchExecute(input);
+        String output = rover.getLocation();
+
+        assertEquals(expected , output);
+    }
+
 }

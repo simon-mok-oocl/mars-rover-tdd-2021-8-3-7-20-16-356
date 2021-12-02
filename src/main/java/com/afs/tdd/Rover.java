@@ -12,6 +12,11 @@ public class Rover {
         this.dir = d;
     }
 
+    public String batchExecute(String comm)
+    {
+        return this.getLocation();
+    }
+
     public void exec(char comm)
     {
         if(comm == 'm')
