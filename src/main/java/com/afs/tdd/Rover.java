@@ -27,6 +27,7 @@ public class Rover {
     private void move()
     {
         if(this.dir == 'N') {this.y++;}
+        else if(this.dir == 'E') {this.x++;}
     }
 
     public String getLocation()
